@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fugit pour Android — télécharger</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0d1526">
+<meta name="description" content="Fugit : des adresses mail temporaires qui s'effacent toutes seules. Télécharge l'application Android gratuite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f0e4;--sf:#fffaf0;--s2:#efe6d3;--ln:#ddd0b6;--tx:#14213d;--dim:#5f6b82;--br:#9a6318;--onb:#fff;--gl:#9a631826;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1526;--sf:#16213a;--s2:#1d2b4a;--ln:#2a3a5f;--tx:#ebe7df;--dim:#8f9bb5;--br:#f0c48a;--onb:#1b1307;--gl:#f0c48a26}}
+:root[data-theme="dark"]{--bg:#0d1526;--sf:#16213a;--s2:#1d2b4a;--ln:#2a3a5f;--tx:#ebe7df;--dim:#8f9bb5;--br:#f0c48a;--onb:#1b1307;--gl:#f0c48a26}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--tx);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}h1,h2,h3,.sf{font-family:"Playfair Display",Georgia,serif;line-height:1.1}
+.w{max-width:1120px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:2px solid var(--br);outline-offset:3px}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+.nav .w{display:flex;align-items:center;gap:28px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font:700 24px "Playfair Display",serif;text-decoration:none}
+.logo b{width:30px;height:30px;border:2px solid var(--br);border-radius:50%;display:grid;place-items:center;color:var(--br);font-size:15px}
+.nav nav{display:flex;gap:24px;margin-left:auto;color:var(--dim);font-size:15px}.nav nav a{text-decoration:none}.nav nav a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:14px 26px;font-weight:600;text-decoration:none;border:1px solid transparent;cursor:pointer;font-size:16px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.p{background:var(--br);color:var(--onb)}.g{border-color:var(--ln);background:transparent;color:var(--tx)}.sm{padding:9px 18px;font-size:14px}
+.hero{background:radial-gradient(60% 70% at 78% 40%,var(--gl),transparent 70%)}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:84px}
+.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--ln);border-radius:999px;padding:5px 14px;font-size:13px;color:var(--dim);margin-bottom:22px}.tag i{width:7px;height:7px;border-radius:50%;background:var(--br)}
+h1{font-size:clamp(40px,6vw,66px);font-weight:700;letter-spacing:-.01em}h1 em{color:var(--br);font-style:italic}
+.lead{font-size:19px;color:var(--dim);max-width:520px;margin:22px 0 32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}.facts{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:28px;color:var(--dim);font-size:14px;list-style:none;padding:0}.facts li:before{content:"✓";color:var(--br);margin-right:7px;font-weight:700}
+.phone{width:290px;margin:0 auto;aspect-ratio:9/18.4;border-radius:42px;background:var(--bg);border:1px solid var(--ln);padding:16px 14px;box-shadow:0 30px 80px #0005,inset 0 0 0 6px var(--s2);display:flex;flex-direction:column;gap:10px;font-size:12px}
+.sbar{display:flex;justify-content:space-between;color:var(--dim);font-size:11px;padding:0 8px}.phone h3{font-size:22px;padding:0 6px}
+.ac{background:var(--sf);border:1px solid var(--ln);border-radius:20px;padding:12px;display:flex;gap:8px;align-items:center}.ac div:first-child{flex:1;min-width:0}.ac small{color:var(--br);font-size:10px}.ac p{font:600 14px/1.25 "Playfair Display",serif;word-break:break-all;margin:2px 0 6px}.ac span{background:var(--s2);border-radius:99px;padding:2px 10px;font-size:11px}
+.chips{display:flex;gap:6px;overflow:hidden}.chips span{border:1px solid var(--ln);border-radius:99px;padding:3px 10px;color:var(--dim);white-space:nowrap}.chips .on{background:var(--br);color:var(--onb);border-color:transparent;font-weight:600}
+.mr{display:flex;gap:9px;align-items:center;padding:7px 4px;border-bottom:1px solid var(--ln)}.mr>i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font:700 13px "Playfair Display",serif;color:#fff;font-style:normal;flex:none}.mr div{flex:1;min-width:0}.mr b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mr small{color:var(--dim);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pill{margin-top:auto;background:var(--s2);border:1px solid var(--ln);border-radius:99px;padding:9px 14px;font-weight:500}
+.ring{--s:36px;position:relative;width:var(--s);height:var(--s);flex:none}.ring svg{width:100%;height:100%}.ring circle{fill:none;stroke:var(--ln);stroke-width:3}
+.ring .pg{stroke:var(--br);stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%;transform-box:view-box}.ring b{position:absolute;inset:0;display:grid;place-content:center;text-align:center;font:600 calc(var(--s)*.24)/1.1 Inter}.ring i{font-style:normal;color:var(--dim);font-weight:500}
+.live .pg{animation:dr 14s ease-in-out infinite alternate}@keyframes dr{from{stroke-dasharray:78 94.2}to{stroke-dasharray:60 94.2}}
+section{padding:84px 0}.eyebrow{color:var(--br);font-weight:600;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+h2{font-size:clamp(30px,4vw,44px);margin-bottom:14px}.sub{color:var(--dim);max-width:560px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:44px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:24px;padding:28px}.card h3{font-size:21px;margin:18px 0 8px}.card p{color:var(--dim);font-size:15px}
+.ic{width:46px;height:46px;border-radius:14px;background:var(--gl);display:grid;place-items:center;color:var(--br)}.ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:44px;list-style:none;padding:0}.steps li{border-top:2px solid var(--br);padding-top:18px}.steps li:before{counter-increment:s;content:"0" counter(s);font:700 34px "Playfair Display",serif;color:var(--br)}.steps h3{font-size:20px;margin:8px 0 6px}.steps p{color:var(--dim);font-size:15px}
+.dl{background:var(--sf);border:1px solid var(--ln);border-radius:32px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:48px;box-shadow:0 20px 60px var(--gl)}
+.dl h2{margin-bottom:8px}.ver{display:inline-block;background:var(--gl);color:var(--br);border-radius:99px;padding:3px 12px;font-weight:600;font-size:13px;margin-bottom:16px}
+dl{margin:22px 0;border-top:1px solid var(--ln)}dl div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--ln);font-size:15px}dt{color:var(--dim)}dd{text-align:right;min-width:0;word-break:break-all}
+code{font:12px ui-monospace,Menlo,monospace;color:var(--dim)}.copy{background:0;border:1px solid var(--ln);border-radius:8px;color:var(--tx);padding:2px 9px;margin-left:8px;cursor:pointer;font-size:12px}
+.guide{list-style:none;padding:0;counter-reset:g;display:grid;gap:14px;margin-top:18px}.guide li{counter-increment:g;display:flex;gap:14px;color:var(--dim);font-size:15px}.guide li:before{content:counter(g);flex:none;width:28px;height:28px;border-radius:50%;background:var(--br);color:var(--onb);font-weight:700;display:grid;place-items:center;font-size:13px}.guide b{color:var(--tx)}
+.note{margin-top:20px;background:var(--s2);border-radius:16px;padding:14px 16px;font-size:14px;color:var(--dim)}
+details{border-bottom:1px solid var(--ln);padding:20px 0}summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}summary:after{content:"+";color:var(--br);font-size:22px;line-height:1}details[open] summary:after{content:"–"}details p{color:var(--dim);margin-top:10px;max-width:680px}
+.faq{max-width:780px}footer{border-top:1px solid var(--ln);padding:36px 0;color:var(--dim);font-size:14px}footer .w{display:flex;gap:18px 28px;flex-wrap:wrap;justify-content:space-between}footer nav{display:flex;gap:20px;flex-wrap:wrap}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr;padding-top:44px;padding-bottom:56px;gap:44px}.dl{grid-template-columns:1fr;padding:28px 22px;gap:32px}.nav nav a:not(.sm){display:none}section{padding:60px 0}}
+.shots{display:flex;gap:18px;justify-content:center;align-items:flex-start}.shots .phone{width:min(46%,262px);margin:0}.shots .phone+.phone{margin-top:56px}.phone{overflow:hidden}.phone.tall{aspect-ratio:9/19.6}
+.hh{display:flex;justify-content:space-between;align-items:center;padding:0 4px;color:var(--dim)}.hh h3{color:var(--tx);font-size:21px;padding:0}
+.hcard{background:var(--sf);border:1px solid var(--ln);border-radius:22px;padding:12px;display:grid;gap:10px}.r1{display:flex;justify-content:space-between;align-items:center;color:var(--dim)}
+.dp{background:color-mix(in srgb,var(--br) 16%,var(--bg));color:var(--br);border-radius:10px;padding:5px 10px;font-weight:600;font-size:11px}
+.r2{display:flex;gap:12px;align-items:center}.al{font:700 18px "Playfair Display",serif}.r2 small{display:block;color:var(--dim);margin:2px 0 8px}.cb,.cb2{background:var(--br);color:var(--onb);font-weight:600;border-radius:12px;padding:6px 14px;display:inline-block}
+.mc{background:var(--sf);border:1px solid var(--ln);border-radius:18px;padding:9px 10px}.chips span{font-size:11px}
+.sheet{margin:auto -14px -16px;background:var(--sf);border:1px solid var(--ln);border-radius:26px 26px 0 0;padding:10px 16px 20px;display:grid;gap:10px}.sheet h3{font-size:19px;padding:0}.hd{width:34px;height:4px;border-radius:9px;background:var(--ln);justify-self:center}
+.tb2{display:flex;background:var(--s2);border-radius:12px}.tb2 span{flex:1;text-align:center;padding:8px 0;color:var(--dim)}.tb2 .on{color:var(--br);font-weight:600;border-bottom:2px solid var(--br)}
+.box{background:var(--s2);border-radius:16px;padding:10px 12px}.box small,.sheet>small{color:var(--dim)}.box p{font-size:15px;font-weight:700;margin-top:2px}.box b{color:var(--br)}.cb2{text-align:center;border-radius:16px;padding:11px}
+.lb{font-size:10px;letter-spacing:.06em;color:var(--br);font-weight:600;margin:4px 6px 0}.st{background:var(--sf);border:1px solid var(--ln);border-radius:18px;padding:10px 12px;display:grid;gap:10px}.sr{display:flex;align-items:center;gap:10px;justify-content:space-between;font-size:11px}
+.tg{width:36px;height:21px;border-radius:99px;background:var(--br);position:relative;flex:none}.tg:after{content:"";position:absolute;right:3px;top:3px;width:15px;height:15px;border-radius:50%;background:var(--onb)}
+.seg3{display:flex;gap:6px}.seg3 span{flex:1;text-align:center;padding:7px 2px;border-radius:12px;background:var(--s2);color:var(--dim);font-size:10px}.seg3 .on{background:var(--br);color:var(--onb);font-weight:600}
+.sec{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}.sec .phone{width:290px;margin:0 auto}
+@media(max-width:860px){.sec{grid-template-columns:1fr;gap:40px}}@media(max-width:560px){.shots .phone+.phone{display:none}.shots .phone{width:min(78%,270px)}}
+.badge{display:inline-flex;align-items:center;gap:14px;background:var(--tx);color:var(--bg);border-radius:16px;padding:12px 24px 12px 18px;text-decoration:none;transition:transform .15s;box-shadow:0 10px 30px var(--gl)}.badge:hover{transform:translateY(-2px)}
+.badge svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.badge span{display:flex;flex-direction:column;line-height:1.2;text-align:left}.badge small{font-size:11px;color:inherit;opacity:.75}.badge i{font-style:normal}.badge b{font-size:18px;font-weight:600}
+.fine{font-size:13px;color:var(--dim);margin-top:14px;max-width:460px}
+.hero{background:radial-gradient(60% 70% at 78% 40%,var(--gl),transparent 70%),linear-gradient(var(--ln) 1px,transparent 1px) 0 0/100% 56px;background-blend-mode:normal}
+.stats{border-block:1px solid var(--ln);background:var(--sf)}.stats .w{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-block:36px}.stats b{display:block;font:700 clamp(34px,5vw,54px)/1 "Playfair Display",serif;color:var(--br);margin-bottom:6px}.stats span{color:var(--dim);font-size:15px}
+.webc{background:var(--sf);border:1px solid var(--ln);border-radius:28px;padding:36px;display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}.webc h3{font-size:26px;margin-bottom:8px}.webc p{color:var(--dim);max-width:520px}
+.final{text-align:center;background:radial-gradient(50% 90% at 50% 0%,var(--gl),transparent 70%)}.final .sub{margin:0 auto 28px}
+@media(max-width:860px){.stats .w{gap:12px}.stats span{font-size:12px}}
+.ico{width:30px;height:30px;border-radius:50%;background:color-mix(in srgb,var(--onb) 16%,transparent);display:grid;place-items:center;flex:none}.bi{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.lm{width:34px;height:34px;flex:none;border-radius:9px}.ah{display:flex;align-items:center;gap:16px;margin-bottom:8px}.ah h2{margin:0}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i1" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i2" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></symbol>
+<symbol id="i3" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i4" viewBox="0 0 24 24"><path d="M4 12V4h8l8 8-8 8-8-8Z"/><circle cx="8.5" cy="8.5" r="1"/></symbol>
+<symbol id="i5" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"/></symbol>
+<symbol id="i6" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
+<symbol id="logo" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#0d1526"/><circle cx="32" cy="32" r="21.5" fill="none" stroke="#2a3a5f" stroke-width="4"/><circle cx="32" cy="32" r="21.5" fill="none" stroke="#f0c48a" stroke-width="4" stroke-linecap="round" stroke-dasharray="101 135" transform="rotate(-90 32 32)"/><g fill="#f0c48a"><rect x="26" y="20" width="4.6" height="23"/><rect x="26" y="20" width="16" height="4.4"/><rect x="38.4" y="20" width="3.6" height="7.6"/><rect x="26" y="30" width="10.6" height="4"/><rect x="33.4" y="28.2" width="3.2" height="7.6"/><rect x="22.5" y="43" width="12.6" height="2.6"/></g></symbol>
+<symbol id="i7" viewBox="0 0 24 24"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></symbol>
+</defs></svg>
+
+<header class="nav"><div class="w">
+  <a class="logo" href="#"><svg class="lm" aria-hidden="true"><use href="#logo"/></svg>Fugit</a>
+  <nav aria-label="Navigation"><a href="#fonctions">Fonctions</a><a href="#install">Installation</a><a href="#faq">FAQ</a><a class="btn p sm" href="#telecharger" data-dl>Télécharger</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="w">
+  <div>
+    <span class="tag"><i></i>Application Android · gratuite pour le moment</span>
+    <h1>Donne une adresse. <em>Pas la tienne.</em></h1>
+    <p class="lead">Des adresses mail jetables pour tes inscriptions, tes codes et tes confirmations. Elles se créent en un geste et s'effacent d'elles-mêmes : ta vraie boîte reste au calme.</p>
+    <div class="cta"><a class="badge apkl" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i7"/></svg><span><small>Télécharger l'APK · <i class="meta"></i></small><b>Fugit pour Android</b></span></a><a class="btn g" href="https://fugit.deltaprecieux851.workers.dev" target="_blank" rel="noopener">Ouvrir dans le navigateur</a></div>
+    <p class="fine">Pas encore sur le Play Store ni l'App Store : l'application s'installe directement depuis le fichier APK.</p>
+    <ul class="facts"><li>Gratuit pour le moment</li><li>Sans compte</li><li>Mails supprimés après 24 h</li><li>Android 8.0+</li></ul>
+  </div>
+  <div class="shots" aria-hidden="true">
+    <div class="phone">
+      <div class="sbar"><span>9:41</span><span>100 %</span></div>
+      <div class="hh"><h3>Fugit</h3><span>⌕ &nbsp;⚙︎</span></div>
+      <div class="hcard"><div class="r1"><span class="dp">@kairo.cc.cd</span><span>▦</span></div>
+        <div class="r2"><div class="ring live" style="--s:70px" data-p=".96" data-t="23 h"></div><div><p class="al">onyx.heron</p><small>Expire dans 23 h</small><span class="cb">⧉ Copier</span></div></div></div>
+      <div class="chips"><span class="on">Réception</span><span>Non lus</span><span>Favoris</span></div>
+      <div class="chips"><span>Codes</span><span>Promotions</span><span>Réseaux</span></div>
+      <div class="mr mc"><i style="background:#0d1526;color:var(--br)">G</i><div><b>GitHub</b><small>Votre code : 482916</small></div><div class="ring" style="--s:32px" data-p=".96" data-t="23 h"></div></div>
+      <div class="pill">● Mes adresses · 1 non lu(s)</div>
+    </div>
+    <div class="phone">
+      <div class="sbar"><span>9:41</span><span>100 %</span></div>
+      <div class="hh" style="opacity:.4"><h3>Fugit</h3><span>⌕ &nbsp;⚙︎</span></div>
+      <div class="hcard" style="opacity:.35;padding:8px 12px"><div class="r1"><span class="dp">@kairo.cc.cd</span></div></div>
+      <div class="sheet"><i class="hd"></i><h3>Forger une adresse</h3>
+        <div class="tb2"><span class="on">Suggérée</span><span>Personnalisée</span></div>
+        <div class="box"><small>Alias suggéré</small><p class="sf">horizon-nocturne-224 <b>↻</b></p></div>
+        <small>Domaine d'accueil</small>
+        <div class="chips"><span>@perfectsolution.qzz.io</span><span>@boting.cc.cd</span></div>
+        <div class="cb2">Créer l'adresse</div></div>
+    </div>
+  </div>
+</div></div>
+
+<div class="stats"><div class="w"><div><b>24 h</b><span>avant que chaque mail s'efface</span></div><div><b>0</b><span>compte à créer, aucun mot de passe</span></div><div><b>10</b><span>adresses actives en même temps</span></div></div></div>
+
+<section id="fonctions"><div class="w">
+  <p class="eyebrow">Fonctions</p><h2>Tout ce qu'une adresse jetable doit savoir faire.</h2>
+  <p class="sub">Tout ce qu'il faut pour recevoir un mail sans exposer ta vraie adresse, rien de plus.</p>
+  <div class="grid">
+    <div class="card"><div class="ic"><svg><use href="#i1"/></svg></div><h3>Anneaux de temps</h3><p>Chaque mail s'efface 24 h après son arrivée. Un anneau doré te montre le temps qui reste.</p></div>
+    <div class="card"><div class="ic"><svg><use href="#i2"/></svg></div><h3>Plusieurs adresses</h3><p>Suggérées au hasard ou à ton nom, regroupées par domaine, avec leurs mails non lus.</p></div>
+    <div class="card"><div class="ic"><svg><use href="#i3"/></svg></div><h3>Codes en un toucher</h3><p>Fugit repère les codes de vérification et te les affiche en grand, prêts à copier.</p></div>
+    <div class="card"><div class="ic"><svg><use href="#i4"/></svg></div><h3>Classement malin</h3><p>Réception, Non lus, Favoris, et des catégories automatiques : Codes, Promotions, Réseaux.</p></div>
+    <div class="card"><div class="ic"><svg><use href="#i5"/></svg></div><h3>Lecture protégée</h3><p>Images distantes bloquées par défaut, aucun script. Pas de pixel espion.</p></div>
+    <div class="card"><div class="ic"><svg><use href="#i6"/></svg></div><h3>Sans compte</h3><p>Ni mot de passe, ni profil. Tu ouvres l'app, ta première adresse est déjà prête.</p></div>
+  </div>
+</div></section>
+
+<section id="securite" style="padding-top:0"><div class="w sec">
+  <div class="phone tall" aria-hidden="true">
+    <div class="sbar"><span>9:41</span><span>100 %</span></div>
+    <div class="hh"><h3>← Réglages</h3></div>
+    <div class="lb">Général</div>
+    <div class="st"><div class="sr"><span>Retrait automatique des adresses vides (24 h)</span><i class="tg"></i></div><div class="sr"><span>Langue de l'application</span><b style="color:var(--br)">FR <span style="color:var(--dim);font-weight:400">· EN</span></b></div></div>
+    <div class="lb">Sécurité &amp; Confidentialité</div>
+    <div class="st"><div class="sr"><span>Verrouillage de l'application<small style="display:block">Coffre protégé au lancement</small></span><i class="tg"></i></div>
+      <div class="seg3"><span class="on">Biométrie</span><span>Schéma (9 pts)</span><span>Code PIN</span></div></div>
+    <div class="lb">À propos &amp; Juridique</div>
+    <div class="st"><div class="sr"><span>Foire aux questions (FAQ)</span><span>›</span></div><div class="sr"><span>Mentions légales &amp; Confidentialité</span><span>›</span></div></div>
+  </div>
+  <div><p class="eyebrow">Sécurité</p><h2>Un coffre qui se verrouille.</h2>
+    <p class="sub">Protège l'accès à Fugit comme tu protèges ton téléphone, et laisse l'application faire le ménage.</p>
+    <ul class="facts" style="flex-direction:column;margin-top:24px;font-size:16px"><li>Verrouillage par empreinte, schéma à 9 points ou code PIN</li><li>Retrait automatique des adresses vides après 24 h</li><li>Interface en français et en anglais, au choix</li></ul></div>
+</div></section>
+
+<section id="install" style="padding-top:0"><div class="w">
+  <p class="eyebrow">En trois étapes</p><h2>Prêt en moins d'une minute.</h2>
+  <ol class="steps">
+    <li><h3>Télécharge</h3><p>Récupère le fichier APK de Fugit depuis la section ci-dessous.</p></li>
+    <li><h3>Installe</h3><p>Ouvre le fichier et autorise l'installation si Android te le demande.</p></li>
+    <li><h3>Utilise</h3><p>Lance Fugit : ton adresse est créée, copie-la et inscris-toi où tu veux.</p></li>
+  </ol>
+</div></section>
+
+<section id="telecharger" style="padding-top:0"><div class="w"><div class="dl">
+  <div>
+    <span class="ver">Version <span id="v">1.0.0</span></span>
+    <div class="ah"><svg class="lm" style="width:64px;height:64px;border-radius:16px" aria-hidden="true"><use href="#logo"/></svg><h2>Fugit pour Android</h2></div>
+    <p class="sub" style="font-size:16px">Installation directe depuis cette page. Gratuite pour le moment.</p>
+    <dl>
+      <div><dt>Version</dt><dd>v<span id="v2">1.0.0</span></dd></div>
+      <div><dt>Taille</dt><dd id="size">4 Mo</dd></div>
+      <div><dt>Compatibilité</dt><dd>Android 8.0 et plus</dd></div>
+      <div><dt>Empreinte SHA-256</dt><dd><code id="sha">à renseigner après la release</code><button class="copy" id="cp" type="button">Copier</button></dd></div>
+    </dl>
+    <div class="cta"><a class="btn p" id="apk" href="#" target="_blank" rel="noopener"><span class="ico"><svg class="bi" aria-hidden="true"><use href="#i7"/></svg></span>Télécharger l'APK</a><a class="btn g" id="notes" href="#" target="_blank" rel="noopener">Notes de version</a></div>
+  </div>
+  <div>
+    <h3 style="font-size:24px">Installer l'application</h3>
+    <ol class="guide">
+      <li><span><b>Télécharge l'APK</b> sur ton téléphone Android.</span></li>
+      <li><span><b>Ouvre le fichier.</b> Si Android l'indique, autorise l'installation depuis ton navigateur ou ton gestionnaire de fichiers.</span></li>
+      <li><span><b>Appuie sur Installer</b>, puis sur Ouvrir.</span></li>
+      <li><span><b>Accepte les notifications</b> pour recevoir les annonces de Fugit.</span></li>
+    </ol>
+    <p class="note">Android peut afficher un avertissement pour une application installée hors du Play Store. C'est normal pour une installation directe. Tu peux comparer l'empreinte SHA-256 ci-contre avec celle de ton fichier pour t'assurer qu'il n'a pas été modifié.</p>
+  </div>
+</div></div></section>
+
+<section id="web" style="padding-top:0"><div class="w"><div class="webc"><div><h3>Pas d'Android ? Utilise Fugit sur le web.</h3><p>Le même service, sur ordinateur, iPhone ou n'importe quel navigateur. Ouvre la page, une adresse est déjà prête.</p></div><a class="btn g" href="https://fugit.deltaprecieux851.workers.dev" target="_blank" rel="noopener">Ouvrir Fugit</a></div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="w faq">
+  <p class="eyebrow">Questions fréquentes</p><h2>Bon à savoir</h2>
+  <details><summary>Fugit est-il gratuit ?</summary><p>Oui, l'application est gratuite pour le moment. Crée autant d'adresses que tu veux, dans la limite de 10 actives en même temps.</p></details>
+  <details><summary>Pourquoi n'est-il pas sur le Play Store ?</summary><p>Fugit n'est pas encore publié sur le Play Store ni sur l'App Store. Pour l'instant, tu l'installes directement depuis le fichier APK proposé sur cette page.</p></details>
+  <details><summary>Installer un APK, est-ce sûr ?</summary><p>Télécharge-le uniquement depuis cette page ou depuis la page officielle des versions du projet. Compare l'empreinte SHA-256 de ton fichier avec celle affichée ici : si elles sont identiques, le fichier n'a pas été modifié.</p></details>
+  <details><summary>Dois-je créer un compte ?</summary><p>Non. Ni compte, ni mot de passe, ni profil. Ta première adresse est prête dès l'ouverture de l'app.</p></details>
+  <details><summary>Combien de temps mes mails sont-ils conservés ?</summary><p>24 heures après leur réception, puis ils sont supprimés automatiquement. Tu peux aussi les supprimer toi-même à tout moment.</p></details>
+  <details><summary>Mes mails sont-ils privés ?</summary><p>Un alias personnalisé est lisible par toute personne qui le connaît. Choisis-en un difficile à deviner, ou laisse Fugit en proposer un. N'utilise pas Fugit pour ta banque ou tes comptes importants.</p></details>
+  <details><summary>Puis-je envoyer des mails ou recevoir des pièces jointes ?</summary><p>Non. Fugit sert uniquement à recevoir des mails, sans pièces jointes pour l'instant.</p></details>
+  <details><summary>Existe-t-il une version pour iPhone ou ordinateur ?</summary><p>L'application est pour Android. La version web de Fugit fonctionne sur tous les appareils : <a href="https://fugit.deltaprecieux851.workers.dev" target="_blank" rel="noopener">ouvrir Fugit dans le navigateur</a>.</p></details>
+</div></section>
+<section class="final"><div class="w"><h2>Garde ta vraie adresse pour toi.</h2><p class="sub">Installe Fugit et crée ta première adresse en moins de dix secondes.</p><a class="badge apkl" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i7"/></svg><span><small>Télécharger l'APK · <i class="meta"></i></small><b>Fugit pour Android</b></span></a></div></section>
+</main>
+
+<footer><div class="w">
+  <div>© Okitakoy, développeur indépendant, Kinshasa, RDC.</div>
+  <nav aria-label="Pied de page">
+    <a href="https://fugit.deltaprecieux851.workers.dev/legal.html#mentions" target="_blank" rel="noopener">Mentions légales</a>
+    <a href="https://fugit.deltaprecieux851.workers.dev/legal.html#confidentialite" target="_blank" rel="noopener">Confidentialité</a>
+    <a href="https://fugit.deltaprecieux851.workers.dev/legal.html#abus" target="_blank" rel="noopener">Signaler un abus</a>
+    <a href="mailto:contact@kairo.cc.cd">contact@kairo.cc.cd</a>
+  </nav>
+</div></footer>
+
+<script>
+// ── À modifier à chaque release ──
+const CFG = {
+  version: "1.0.0",
+  size: "4 Mo",
+  sha256: "84c0131b2f4dc05440d4360472e55a5141e5d61bb42f002be7c91fdfb556096f",
+  apk: "https://github.com/clonemanger/Fugit-TempMail/releases/download/v1.0.0/Fugit.apk",
+  notes: "https://github.com/clonemanger/Fugit-TempMail/releases/tag/v1.0.0"
+};
+document.getElementById("v").textContent = document.getElementById("v2").textContent = CFG.version;
+document.getElementById("size").textContent = CFG.size;
+if (CFG.sha256) document.getElementById("sha").textContent = CFG.sha256;
+document.getElementById("apk").href = CFG.apk;
+document.querySelectorAll(".apkl").forEach(a => a.href = CFG.apk);
+document.querySelectorAll(".meta").forEach(m => m.textContent = "v" + CFG.version + " · " + CFG.size);
+document.getElementById("notes").href = CFG.notes;
+document.getElementById("cp").onclick = function () {
+  const t = CFG.sha256; if (!t) return;
+  try { navigator.clipboard.writeText(t); this.textContent = "Copié ✓"; setTimeout(() => this.textContent = "Copier", 1600); } catch (e) {}
+};
+document.querySelectorAll(".ring").forEach(e => {
+  const [a, b] = (e.dataset.t || "").split("|");
+  e.innerHTML = `<svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15"/><circle class="pg" cx="18" cy="18" r="15" stroke-dasharray="${(+e.dataset.p * 94.2).toFixed(1)} 94.2"/></svg><b>${a}<i>${b || ""}</i></b>`;
+});
+</script>
+</body>
+</html>
