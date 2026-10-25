@@ -10,6 +10,7 @@
 <meta name="theme-color" content="#0d1526">
 <meta name="description" content="Fugit : des adresses mail temporaires qui s'effacent toutes seules. Télécharge l'application Android gratuite.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f0e4;--sf:#fffaf0;--s2:#efe6d3;--ln:#ddd0b6;--tx:#14213d;--dim:#5f6b82;--br:#9a6318;--onb:#fff;--gl:#9a631826;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -55,6 +56,7 @@ dl{margin:22px 0;border-top:1px solid var(--ln)}dl div{display:flex;justify-cont
 code{font:12px ui-monospace,Menlo,monospace;color:var(--dim)}.copy{background:0;border:1px solid var(--ln);border-radius:8px;color:var(--tx);padding:2px 9px;margin-left:8px;cursor:pointer;font-size:12px}
 .guide{list-style:none;padding:0;counter-reset:g;display:grid;gap:14px;margin-top:18px}.guide li{counter-increment:g;display:flex;gap:14px;color:var(--dim);font-size:15px}.guide li:before{content:counter(g);flex:none;width:28px;height:28px;border-radius:50%;background:var(--br);color:var(--onb);font-weight:700;display:grid;place-items:center;font-size:13px}.guide b{color:var(--tx)}
 .note{margin-top:20px;background:var(--s2);border-radius:16px;padding:14px 16px;font-size:14px;color:var(--dim)}
+.new{background:var(--s2);border-radius:16px;padding:14px 16px;margin-bottom:22px;font-size:14px;color:var(--dim)}.new b{display:block;color:var(--tx);margin-bottom:6px}.new ul{margin:0;padding-left:18px;display:grid;gap:4px}
 details{border-bottom:1px solid var(--ln);padding:20px 0}summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}summary:after{content:"+";color:var(--br);font-size:22px;line-height:1}details[open] summary:after{content:"–"}details p{color:var(--dim);margin-top:10px;max-width:680px}
 .faq{max-width:780px}footer{border-top:1px solid var(--ln);padding:36px 0;color:var(--dim);font-size:14px}footer .w{display:flex;gap:18px 28px;flex-wrap:wrap;justify-content:space-between}footer nav{display:flex;gap:20px;flex-wrap:wrap}
 @media(max-width:860px){.hero .w{grid-template-columns:1fr;padding-top:44px;padding-bottom:56px;gap:44px}.dl{grid-template-columns:1fr;padding:28px 22px;gap:32px}.nav nav a:not(.sm){display:none}section{padding:60px 0}}
@@ -108,7 +110,7 @@ details{border-bottom:1px solid var(--ln);padding:20px 0}summary{cursor:pointer;
     <span class="tag"><i></i>Application Android · gratuite pour le moment</span>
     <h1>Donne une adresse. <em>Pas la tienne.</em></h1>
     <p class="lead">Des adresses mail jetables pour tes inscriptions, tes codes et tes confirmations. Elles se créent en un geste et s'effacent d'elles-mêmes : ta vraie boîte reste au calme.</p>
-    <div class="cta"><a class="badge apkl" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i7"/></svg><span><small>Télécharger l'APK · <i class="meta"></i></small><b>Fugit pour Android</b></span></a><a class="btn g" href="https://fugit.deltaprecieux851.workers.dev" target="_blank" rel="noopener">Ouvrir dans le navigateur</a></div>
+    <div class="cta"><a class="badge apkl" href="https://github.com/clonemanger/Fugit-TempMail/releases/download/v1.1.0/Fugit.apk" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i7"/></svg><span><small>Télécharger l'APK · <i class="meta">v1.1.0 · 4 Mo</i></small><b>Fugit pour Android</b></span></a><a class="btn g" href="https://fugit.deltaprecieux851.workers.dev" target="_blank" rel="noopener">Ouvrir dans le navigateur</a></div>
     <p class="fine">Pas encore sur le Play Store ni l'App Store : l'application s'installe directement depuis le fichier APK.</p>
     <ul class="facts"><li>Gratuit pour le moment</li><li>Sans compte</li><li>Mails supprimés après 24 h</li><li>Android 8.0+</li></ul>
   </div>
@@ -147,7 +149,7 @@ details{border-bottom:1px solid var(--ln);padding:20px 0}summary{cursor:pointer;
     <div class="card"><div class="ic"><svg><use href="#i2"/></svg></div><h3>Plusieurs adresses</h3><p>Suggérées au hasard ou à ton nom, regroupées par domaine, avec leurs mails non lus.</p></div>
     <div class="card"><div class="ic"><svg><use href="#i3"/></svg></div><h3>Codes en un toucher</h3><p>Fugit repère les codes de vérification et te les affiche en grand, prêts à copier.</p></div>
     <div class="card"><div class="ic"><svg><use href="#i4"/></svg></div><h3>Classement malin</h3><p>Réception, Non lus, Favoris, et des catégories automatiques : Codes, Promotions, Réseaux.</p></div>
-    <div class="card"><div class="ic"><svg><use href="#i5"/></svg></div><h3>Lecture protégée</h3><p>Images distantes bloquées par défaut, aucun script. Pas de pixel espion.</p></div>
+    <div class="card"><div class="ic"><svg><use href="#i5"/></svg></div><h3>Lecture protégée</h3><p>Images distantes bloquées par défaut, aucun script, pas de pixel espion. Les liens des mails demandent ta confirmation avant de s'ouvrir.</p></div>
     <div class="card"><div class="ic"><svg><use href="#i6"/></svg></div><h3>Sans compte</h3><p>Ni mot de passe, ni profil. Tu ouvres l'app, ta première adresse est déjà prête.</p></div>
   </div>
 </div></section>
@@ -180,16 +182,21 @@ details{border-bottom:1px solid var(--ln);padding:20px 0}summary{cursor:pointer;
 
 <section id="telecharger" style="padding-top:0"><div class="w"><div class="dl">
   <div>
-    <span class="ver">Version <span id="v">1.0.0</span></span>
+    <span class="ver">Version <span id="v">1.1.0</span></span>
     <div class="ah"><svg class="lm" style="width:64px;height:64px;border-radius:16px" aria-hidden="true"><use href="#logo"/></svg><h2>Fugit pour Android</h2></div>
     <p class="sub" style="font-size:16px">Installation directe depuis cette page. Gratuite pour le moment.</p>
     <dl>
-      <div><dt>Version</dt><dd>v<span id="v2">1.0.0</span></dd></div>
+      <div><dt>Version</dt><dd>v<span id="v2">1.1.0</span></dd></div>
       <div><dt>Taille</dt><dd id="size">4 Mo</dd></div>
       <div><dt>Compatibilité</dt><dd>Android 8.0 et plus</dd></div>
-      <div><dt>Empreinte SHA-256</dt><dd><code id="sha">à renseigner après la release</code><button class="copy" id="cp" type="button">Copier</button></dd></div>
+      <div><dt>Empreinte SHA-256</dt><dd><code id="sha">76fd73d902569eaf6d5d3e878b9c46801b653713a21f861f990bff69cd840599</code><button class="copy" id="cp" type="button">Copier</button></dd></div>
     </dl>
-    <div class="cta"><a class="btn p" id="apk" href="#" target="_blank" rel="noopener"><span class="ico"><svg class="bi" aria-hidden="true"><use href="#i7"/></svg></span>Télécharger l'APK</a><a class="btn g" id="notes" href="#" target="_blank" rel="noopener">Notes de version</a></div>
+    <div class="new"><b>Nouveautés de la 1.1.0</b><ul>
+      <li>Les liens des mails sont cliquables, en HTML comme en texte brut.</li>
+      <li>Une confirmation s'affiche avant d'ouvrir un lien, avec l'option « Ne plus demander pour ce domaine ».</li>
+      <li>Seuls les liens http, https et mailto sont acceptés.</li>
+    </ul></div>
+    <div class="cta"><a class="btn p" id="apk" href="https://github.com/clonemanger/Fugit-TempMail/releases/download/v1.1.0/Fugit.apk" target="_blank" rel="noopener"><span class="ico"><svg class="bi" aria-hidden="true"><use href="#i7"/></svg></span>Télécharger l'APK</a><a class="btn g" id="notes" href="https://github.com/clonemanger/Fugit-TempMail/releases/tag/v1.1.0" target="_blank" rel="noopener">Notes de version</a></div>
   </div>
   <div>
     <h3 style="font-size:24px">Installer l'application</h3>
@@ -199,7 +206,7 @@ details{border-bottom:1px solid var(--ln);padding:20px 0}summary{cursor:pointer;
       <li><span><b>Appuie sur Installer</b>, puis sur Ouvrir.</span></li>
       <li><span><b>Accepte les notifications</b> pour recevoir les annonces de Fugit.</span></li>
     </ol>
-    <p class="note">Android peut afficher un avertissement pour une application installée hors du Play Store. C'est normal pour une installation directe. Tu peux comparer l'empreinte SHA-256 ci-contre avec celle de ton fichier pour t'assurer qu'il n'a pas été modifié.</p>
+    <p class="note">Android peut afficher un avertissement pour une application installée hors du Play Store. C'est normal pour une installation directe. Si tu as déjà la version 1.0.0, l'installation la met à jour directement. Tu peux comparer l'empreinte SHA-256 ci-contre avec celle de ton fichier pour t'assurer qu'il n'a pas été modifié.</p>
   </div>
 </div></div></section>
 
@@ -213,10 +220,11 @@ details{border-bottom:1px solid var(--ln);padding:20px 0}summary{cursor:pointer;
   <details><summary>Dois-je créer un compte ?</summary><p>Non. Ni compte, ni mot de passe, ni profil. Ta première adresse est prête dès l'ouverture de l'app.</p></details>
   <details><summary>Combien de temps mes mails sont-ils conservés ?</summary><p>24 heures après leur réception, puis ils sont supprimés automatiquement. Tu peux aussi les supprimer toi-même à tout moment.</p></details>
   <details><summary>Mes mails sont-ils privés ?</summary><p>Un alias personnalisé est lisible par toute personne qui le connaît. Choisis-en un difficile à deviner, ou laisse Fugit en proposer un. N'utilise pas Fugit pour ta banque ou tes comptes importants.</p></details>
+  <details><summary>Les liens dans les mails sont-ils dangereux ?</summary><p>Fugit n'ouvre jamais un lien sans te le demander : il affiche d'abord le domaine, puis te laisse ouvrir, copier le lien ou annuler. Reste prudent avec les mails d'expéditeurs inconnus.</p></details>
   <details><summary>Puis-je envoyer des mails ou recevoir des pièces jointes ?</summary><p>Non. Fugit sert uniquement à recevoir des mails, sans pièces jointes pour l'instant.</p></details>
   <details><summary>Existe-t-il une version pour iPhone ou ordinateur ?</summary><p>L'application est pour Android. La version web de Fugit fonctionne sur tous les appareils : <a href="https://fugit.deltaprecieux851.workers.dev" target="_blank" rel="noopener">ouvrir Fugit dans le navigateur</a>.</p></details>
 </div></section>
-<section class="final"><div class="w"><h2>Garde ta vraie adresse pour toi.</h2><p class="sub">Installe Fugit et crée ta première adresse en moins de dix secondes.</p><a class="badge apkl" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i7"/></svg><span><small>Télécharger l'APK · <i class="meta"></i></small><b>Fugit pour Android</b></span></a></div></section>
+<section class="final"><div class="w"><h2>Garde ta vraie adresse pour toi.</h2><p class="sub">Installe Fugit et crée ta première adresse en moins de dix secondes.</p><a class="badge apkl" href="https://github.com/clonemanger/Fugit-TempMail/releases/download/v1.1.0/Fugit.apk" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i7"/></svg><span><small>Télécharger l'APK · <i class="meta">v1.1.0 · 4 Mo</i></small><b>Fugit pour Android</b></span></a></div></section>
 </main>
 
 <footer><div class="w">
@@ -232,11 +240,11 @@ details{border-bottom:1px solid var(--ln);padding:20px 0}summary{cursor:pointer;
 <script>
 // ── À modifier à chaque release ──
 const CFG = {
-  version: "1.0.0",
+  version: "1.1.0",
   size: "4 Mo",
-  sha256: "84c0131b2f4dc05440d4360472e55a5141e5d61bb42f002be7c91fdfb556096f",
-  apk: "https://github.com/clonemanger/Fugit-TempMail/releases/download/v1.0.0/Fugit.apk",
-  notes: "https://github.com/clonemanger/Fugit-TempMail/releases/tag/v1.0.0"
+  sha256: "76fd73d902569eaf6d5d3e878b9c46801b653713a21f861f990bff69cd840599",
+  apk: "https://github.com/clonemanger/Fugit-TempMail/releases/download/v1.1.0/Fugit.apk",
+  notes: "https://github.com/clonemanger/Fugit-TempMail/releases/tag/v1.1.0"
 };
 document.getElementById("v").textContent = document.getElementById("v2").textContent = CFG.version;
 document.getElementById("size").textContent = CFG.size;
@@ -246,8 +254,18 @@ document.querySelectorAll(".apkl").forEach(a => a.href = CFG.apk);
 document.querySelectorAll(".meta").forEach(m => m.textContent = "v" + CFG.version + " · " + CFG.size);
 document.getElementById("notes").href = CFG.notes;
 document.getElementById("cp").onclick = function () {
-  const t = CFG.sha256; if (!t) return;
-  try { navigator.clipboard.writeText(t); this.textContent = "Copié ✓"; setTimeout(() => this.textContent = "Copier", 1600); } catch (e) {}
+  const t = CFG.sha256, b = this;
+  if (!t) return;
+  function ok() { b.textContent = "Copié ✓"; setTimeout(function () { b.textContent = "Copier"; }, 1600); }
+  function fallback() {
+    const a = document.createElement("textarea");
+    a.value = t; a.style.position = "fixed"; a.style.opacity = "0";
+    document.body.appendChild(a); a.select();
+    try { if (document.execCommand("copy")) ok(); } catch (e) {}
+    a.remove();
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(ok, fallback);
+  else fallback();
 };
 document.querySelectorAll(".ring").forEach(e => {
   const [a, b] = (e.dataset.t || "").split("|");
