@@ -1,8 +1,8 @@
 {
-  "versionCode": 4,
-  "versionName": "1.2.1",
+  "versionCode": 5,
+  "versionName": "1.2.2",
   "apkUrl": "https://github.com/clonemanger/Fugit-TempMail/releases/download/v1.2.1/Fugit.apk",
-  "sha256": "cf22b774bd28276226e9fccaace3d48c724ceb76717af8b32ab3256b92e54c00",
+  "sha256": "635b178524a00d7dccfba6cf006f0bc53ebe9a9c4de0d7f59c57b411dbebba97",
   "sizeBytes": 3653049,
   "notes": [
     "Notifications push à chaque nouveau mail",
